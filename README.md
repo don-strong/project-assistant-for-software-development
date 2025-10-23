@@ -1,14 +1,8 @@
-# 🧭 CS 301 Group Project — README Template
-
-Use this README as the front page of your team’s GitHub repository.  
-Fill out every section clearly. The **FlowSpace** example is shown in *italics* to demonstrate what a complete entry looks like.
-
+# 🧭 CS 301 Group Project — README
 ---
 
-## 📘 Project Name
-**Your Entry:**  
-> *(e.g., FlowSpace)*  
-A smart scheduling assistant that helps users maximize contiguous blocks of personal well-being time by reorganizing flexible events in their calendar.
+## 📘 Assistant for Developers
+A desktop productivity assistant designed to help programmers manage stress and maintain efficiency through friendly pop-up reminders, productivity suggestions, and time management guidance based on their work habits and preferences.
 
 ---
 
@@ -16,47 +10,33 @@ A smart scheduling assistant that helps users maximize contiguous blocks of pers
 **Your Entry:**  
 | Name | Role | GitHub Username |
 |------|------|-----------------|
-| Alice Example | Project Manager / Developer | @alice-example |
-| Bob Example | Frontend Developer | @bob-example |
-| Carol Example | Backend Developer | @carol-example |
-| Dave Example | QA / Documentation | @dave-example |
-
-*(Include all team members with their primary roles.)*
+| Avery Rochon | Developer / UI/UX | @aroch0 |
+| Christopher Iverson | Developer | @Christopher-iverson |
+| Luci Crow | Project Manager / Developer | @Lucislight |
+| Lawrence Branch | Developer / UI/UX| @LawrenceBranch |
 
 ---
 
 ## 🧭 Brief Background About the Project
-**Your Entry:**  
-> *(Example:)*  
-Modern life often fragments our days with meetings, alerts, and micro-tasks. **FlowSpace** helps users reclaim their time by analyzing their calendar and reorganizing flexible events to preserve long, uninterrupted periods of personal focus or rest.
-
-Your description should summarize:
-- The **problem** your app addresses  
-- The **target users**  
-- The **benefit/value** your solution provides  
+**Your Entry:**  Programmers often face stress and productivity loss due to poor time management and lack of structured workflow tools. This can lead to burnout and inefficient work habits. Computer based professionals who want to improve focus, maintain work-life balance, and reduce stress while coding or managing software projects. This Assistant for Developers provides a welcoming desktop app that delivers personalized reminders, tips, and breaks through pop-ups. These prompts are informed by research-based productivity and stress-management techniques, helping users maintain healthy, sustainable work habits.
 
 ---
 
 ## ⚙️ Current Features
 **Your Entry:**  
-> *(Example:)*  
-- Well-Being Block Optimizer — finds the longest contiguous free time each day  
-- Smart Re-Scheduling — recommends moving flexible events to protect downtime  
-- Balance Dashboard — visualizes work vs. personal time each week  
-- Reflection Prompts — short daily check-ins that improve future suggestions  
-- Notification System — gentle reminders to preserve your “flow blocks”
-
-List all features that are **currently implemented** or **in progress**.
+- README.md
+- Questions and AI research
 
 ---
 
 ## 🧩 Planned Features / Future Work
-**Your Entry:**  
-> *(Example:)*  
-- Calendar sync (Google, Outlook, Apple)  
-- AI-assisted schedule optimization  
-- Mood trend visualizations  
-- Shared calendar support for households or teams
+**Your Entry:**    
+-Fully functional pop-up reminder system (JavaFX + SceneBuilder)
+-Enhanced data storage system (user responses and preferences)
+-Smart timer system that adjusts to user input
+-Option to ignore or pause reminders / self-shutdown timer
+-Expanded question pool for different work types
+-UX testing and refinement
 
 ---
 
@@ -65,49 +45,36 @@ List all features that are **currently implemented** or **in progress**.
 
 | **Week** | **Milestone / Deliverables** | **Owners** | **Evidence (PRs/Links/Demos)** |
 |-----------|------------------------------|-------------|--------------------------------|
-| 1 | Define functional requirements; set up repo | Alice, Bob | README.md, requirements doc |
-| 2 | Create wireframes + initial backend skeleton | Carol, Dave | `/design`, `/api` folders |
-| 3 | Implement Core Function A (calendar parser) | Team | Commit hash, screenshots |
-| 4 | Integrate dashboard + basic UI | Bob | Deployed demo |
-| 5 | Add rescheduling logic | Carol | Pull request #23 |
-| 6 | Refine algorithm, write tests | Dave | Test coverage report |
-| 7 | Add user reflections + notifications | Alice | Feature branch merge |
-| 8 | Final polish + presentation | Team | Video demo, final slides |
+| 1 | Meet team, assign roles and tasks, Finalize idea proposal and project requirements | Team | README.md, requirements doc, proposal doc (canvas) |
+| 2 | Setup code structure, create data storage(csv), begin questions | Team | java file |
+| 3 | Complete question flow, implement timer, begin testing pop-ups | Team | screenshots, java file |
+| 4 | Develop JavaFX, work timer with pop-up, add settings menu | Team | Screenshots, java file |
+| 5 | UX testing, error handling, UI | Team | java file |
+| 6 | Finalize features, executable (.exe), pres| Dave | files java, .exe |
 
 ---
 
 ## 🧠 Definition of Done (DoD)
-A feature is **done** when:
-- Code is reviewed and merged into `main`  
-- All acceptance criteria are met  
-- Unit tests pass in CI/CD  
-- Demo shows functional feature without breaking existing functionality  
-- Documentation (README / inline comments) is up to date  
-
----
+> A feature is **done** when:
+- Code is reviewed and merged into main
+- All acceptance criteria are met
+- Unit tests pass in CI/CD
+- Demo shows functional feature without breaking existing functionality
+- Documentation (README / inline comments) is up to date
 
 ## 💻 How to Run
 
-**Your Entry:**
-> *(Example: FlowSpace)*
-
-### 1. Clone Repository
-```
+**Your Entry:** > Assistant for Developers ### 1. Clone Repository
 git clone https://github.com/example-url/flowspace.git
 cd flowspace
-```
 
-### 2. Backend Setup (Python/Flask)
-```
+### 2. Backend Setup (Java)
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 flask run
-```
 
 ### 3. Frontend Setup (React)
-```
 cd client
 npm install
 npm start
-```
