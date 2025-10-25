@@ -18,8 +18,7 @@ A desktop productivity assistant designed to help programmers manage stress and 
 ---
 
 ## 🧭 Brief Background About the Project
-**Your Entry:**  Programmers often face stress and productivity loss due to poor time management and lack of structured workflow tools. This can lead to burnout and inefficient work habits. Computer based professionals who want to improve focus, maintain work-life balance, and reduce stress while coding or managing software projects. This Assistant for Developers provides a welcoming desktop app that delivers personalized reminders, tips, and breaks through pop-ups. These prompts are informed by research-based productivity and stress-management techniques, helping users maintain healthy, sustainable work habits. This assistant is knowledge based from previous programming errors or logic.
-
+**Your Entry:**  Programmers often face stress and productivity loss due to poor time management and lack of structured workflow tools. This can lead to burnout and inefficient work habits. Computer based professionals who want to improve focus, maintain work-life balance, and reduce stress while coding or managing software projects. This application is for Developers that provides a welcoming desktop app that delivers personalized reminders, tips, and breaks through pop-ups. These prompts are informed by research-based productivity and stress-management techniques, helping users maintain healthy, sustainable work habits. This assistant will also create and implement a knowledge base of previous programming issues to increase efficiency and reduce stress. 
 ---
 
 ## ⚙️ Current Features
