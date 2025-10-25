@@ -10,32 +10,32 @@ A desktop productivity assistant designed to help programmers manage stress and 
 **Your Entry:**  
 | Name | Role | GitHub Username |
 |------|------|-----------------|
-| Avery Rochon | Developer / UI/UX | @aroch0 |
-| Christopher Iverson | Developer | @Christopher-iverson |
-| Luci Crow | Project Manager / Developer | @Lucislight |
-| Lawrence Branch | Developer / UI/UX| @LawrenceBranch |
+| Avery Rochon | Developer / UI & UX Engineer | @aroch0 |
+| Christopher Iverson | Database Engineer | @Christopher-iverson |
+| Luci Crow | Project Manager / Database Engineer | @Lucislight |
+| Bryan (Lawrence) Branch | Developer/ UI & UX Engineer| @LawrenceBranch |
 
 ---
 
 ## 🧭 Brief Background About the Project
-**Your Entry:**  Programmers often face stress and productivity loss due to poor time management and lack of structured workflow tools. This can lead to burnout and inefficient work habits. Computer based professionals who want to improve focus, maintain work-life balance, and reduce stress while coding or managing software projects. This Assistant for Developers provides a welcoming desktop app that delivers personalized reminders, tips, and breaks through pop-ups. These prompts are informed by research-based productivity and stress-management techniques, helping users maintain healthy, sustainable work habits.
+**Your Entry:**  Programmers often face stress and productivity loss due to poor time management and lack of structured workflow tools. This can lead to burnout and inefficient work habits. Computer based professionals who want to improve focus, maintain work-life balance, and reduce stress while coding or managing software projects. This Assistant for Developers provides a welcoming desktop app that delivers personalized reminders, tips, and breaks through pop-ups. These prompts are informed by research-based productivity and stress-management techniques, helping users maintain healthy, sustainable work habits. This assistant is knowledge based from previous programming errors or logic.
 
 ---
 
 ## ⚙️ Current Features
 **Your Entry:**  
 - README.md
-- Questions and AI research
 
 ---
 
-## 🧩 Planned Features / Future Work
-**Your Entry:**    
+## 🧩 Planned Features / Future Work    
 -Fully functional pop-up reminder system (JavaFX + SceneBuilder)
 -Enhanced data storage system (user responses and preferences)
+- Questions for pop-up
 -Smart timer system that adjusts to user input
 -Option to ignore or pause reminders / self-shutdown timer
 -Expanded question pool for different work types
+-Search for results
 -UX testing and refinement
 
 ---
@@ -45,12 +45,14 @@ A desktop productivity assistant designed to help programmers manage stress and 
 
 | **Week** | **Milestone / Deliverables** | **Owners** | **Evidence (PRs/Links/Demos)** |
 |-----------|------------------------------|-------------|--------------------------------|
-| 1 | Meet team, assign roles and tasks, Finalize idea proposal and project requirements | Team | README.md, requirements doc, proposal doc (canvas) |
-| 2 | Setup code structure, create data storage(csv), begin questions | Team | java file |
-| 3 | Complete question flow, implement timer, begin testing pop-ups | Team | screenshots, java file |
-| 4 | Develop JavaFX, work timer with pop-up, add settings menu | Team | Screenshots, java file |
-| 5 | UX testing, error handling, UI | Team | java file |
-| 6 | Finalize features, executable (.exe), pres| Dave | files java, .exe |
+| 1 | Proposal completion, assign roles, and plan structure | Avery & Luci | Initial commits, requirements doc, meeting notes |
+| 2 | Define main controllers, implement storage layer, UI prototype classes (pop up and reminders) | Team | working structure branch, README|
+| 3 | Functioning prototype starts and stores user input | Luci & Chris | Prototype/ dev branch, video demo|
+| 4 | UI screens in SceneBuilder core framework are finished. | Avery & Bryan | screenshots, UI mockup |
+| 5 | Integrate pop ups with timer logic, implement independent popups in JavaFX.  | Team | Demo with popups, demo video |
+| 6 | Refine UI and test, begin documentation for final submission (Thanksgiving). | Avery & Bryan | User testing feedback, UI refinement commits |
+| 7 | Integrate any other modules, Fix bugs and polish, prepare .exe, finish documentation and presentation practice | Team | Final tagged v1.0, .exe upload to git, screenshots and demo |
+|8| All files uploaded and pushed to main. Deliver application with presentation | Team | Project submission | 
 
 ---
 
