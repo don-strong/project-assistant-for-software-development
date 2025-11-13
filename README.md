@@ -28,11 +28,11 @@ A desktop productivity assistant designed to help programmers manage stress and 
 ---
 
 ## 🧩 Planned Features / Future Work    
--Fully functional pop-up reminder system (JavaFX + SceneBuilder)
--Enhanced data storage system (user responses and preferences)
-- Questions for pop-up
--Smart timer system that adjusts to user input
--Option to ignore or pause reminders / self-shutdown timer
+-Fully functional pop-up reminder system (JavaFX + SceneBuilder) | In Progress |
+-Enhanced data storage system (user responses and preferences) | In Progress |
+- Questions for pop-up | In Progress |
+-Smart timer system that adjusts to user input | In Progress |
+-Option to ignore or pause reminders / self-shutdown timer | In Progress |
 -Expanded question pool for different work types
 -Search for results
 -UX testing and refinement
@@ -45,19 +45,19 @@ A desktop productivity assistant designed to help programmers manage stress and 
 | **Week** | **Milestone / Deliverables** | **Owners** | **Evidence (PRs/Links/Demos)** |
 |-----------|------------------------------|-------------|--------------------------------|
 | 1 | Proposal completion, assign roles, and plan structure | Avery & Luci | Initial commits, requirements doc, meeting notes |
-| 2 | Define main controllers, implement storage layer, UI prototype classes (pop up and reminders) | Team | working structure branch, README|
-| 3 | Functioning prototype starts and stores user input | Luci & Chris | Prototype/ dev branch, video demo|
-| 4 | UI screens in SceneBuilder core framework are finished. | Avery & Bryan | screenshots, UI mockup |
+| 2 | Define main controllers, implement storage layer, UI prototype classes (pop up and reminders) | Avery, Luci, Chris | working structure branch, README, WIKI|
+| 3 | Functioning prototype starts and stores user input | Luci, Chris, Avery | WIKI: Design elements- Json, java, and fxml files|
+| 4 | UI screens in SceneBuilder core framework are finished. | Avery & Bryan | In Progress... |
 | 5 | Integrate pop ups with timer logic, implement independent popups in JavaFX.  | Team | Demo with popups, demo video |
 | 6 | Refine UI and test, begin documentation for final submission (Thanksgiving). | Avery & Bryan | User testing feedback, UI refinement commits |
 | 7 | Integrate any other modules, Fix bugs and polish, prepare .exe, finish documentation and presentation practice | Team | Final tagged v1.0, .exe upload to git, screenshots and demo |
-|8| All files uploaded and pushed to main. Deliver application with presentation | Team | Project submission | 
+| 8 | All files uploaded and pushed to main. Deliver application with presentation | Team | Project submission | 
 
 ---
 
-## 🧠 Definition of Done (DoD)
+## 🧠 Definition of Done (DoD) (Changes to weekly tasks)
 > A feature is **done** when:
-- Code is reviewed and merged into main
+- Code is reviewed and merged into main / wiki
 - All acceptance criteria are met
 - Unit tests pass in CI/CD
 - Demo shows functional feature without breaking existing functionality
