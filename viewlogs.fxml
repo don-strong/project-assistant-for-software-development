@@ -1,50 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<AnchorPane prefWidth="600.0" prefHeight="400.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.ViewLogsController">
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <MenuBar layoutX="1.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="Home">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Entry Log">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Timer">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="Settings">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
-               </items>
-            </Menu>
-        </menus>
-      </MenuBar>
-      <TableView editable="true" layoutX="1.0" layoutY="36.0" prefHeight="363.0" prefWidth="600.0">
+    <!-- SEARCH FIELD -->
+    <TextField fx:id="searchField"
+               layoutX="20.0" layoutY="10.0"
+               prefWidth="200.0"
+               promptText="Search"/>
+
+    <!-- TABLE OF LOGS -->
+    <TableView fx:id="logsTable"
+               layoutX="0.0" layoutY="40.0"
+               prefWidth="600.0" prefHeight="360.0"
+               editable="true">
+
         <columns>
-          <TableColumn prefWidth="75.0" text="Date" />
-          <TableColumn prefWidth="75.0" text="Name" />
-            <TableColumn prefWidth="75.0" text="Problem" />
-            <TableColumn prefWidth="75.0" text="Solution" />
+            <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Date"/>
+            <TableColumn fx:id="nameColumn" prefWidth="150.0" text="Name"/>
+            <TableColumn fx:id="problemColumn" prefWidth="150.0" text="Problem"/>
+            <TableColumn fx:id="solutionColumn" prefWidth="150.0" text="Solution"/>
         </columns>
-      </TableView>
-      <ScrollBar layoutX="587.0" layoutY="135.0" orientation="VERTICAL" />
-      <TextField layoutX="450.0" promptText="Search" />
-   </children>
+    </TableView>
+
 </AnchorPane>
