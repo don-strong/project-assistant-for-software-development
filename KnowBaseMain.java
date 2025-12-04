@@ -7,7 +7,7 @@ public class KnowBaseMain {
     public KnowBaseMain() {
         this.dbRepo = new DBRepo("knowledge_base");
     }
-
+    // Method to insert KnowDB record into the database
     public void insertKnowDB(KnowDB knowDB) {
         Document doc = new Document("id", knowDB.id())
                 .append("keywords", knowDB.keywords())
@@ -17,5 +17,9 @@ public class KnowBaseMain {
                 .append("known_solutions", knowDB.known_solutions());
     
     dbRepo.insertDocument(doc);
+    }
+    // Method to retrieve all KnowDB records from the database
+    public Iterable<Document> getAllKnowDBEntries() {
+        return dbRepo.getDocuments();
     }
 }

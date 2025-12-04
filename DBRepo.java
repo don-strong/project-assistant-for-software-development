@@ -18,7 +18,12 @@ public class DBRepo {
     public void insertDocument(Document doc) {
         kbarticle.insertOne(doc);
     }
+    // Method to retrieve documents from collection
+    public Iterable<Document> getDocuments() {
+        return kbarticle.find();
+    }
 
+    // method to get the collection
     public MongoCollection<Document> getKbarticle() {
         return kbarticle;
     }
