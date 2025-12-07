@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400" prefWidth="600"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.project.app.controller.HomeController"
+            fx:id="contentArea" VBox.vgrow="ALWAYS">
+    <!--            xmlns="http://javafx.com/javafx/25" -->
+    <children>
+        <Text layoutX="197.0" layoutY="101.0" text="Welcome!" strokeWidth="0.0">
+            <font><Font size="48.0"/></font>
+        </Text>
+        <Button layoutX="241.0" layoutY="171.0" text="Start Session"
+                onAction="#openQuestionaire"
+                prefWidth="138.0" prefHeight="40.0"/>
+    </children>
+
+</AnchorPane>

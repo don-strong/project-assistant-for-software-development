@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.project.app.controller.HomeController">
+<!--      xmlns="http://javafx.com/javafx/25"-->
+
+
+    <children>
+
+        <!-- MENU BAR (SHARED ACROSS ALL PAGES) -->
+        <MenuBar VBox.vgrow="NEVER">
+            <menus>
+                <Menu text="Home">
+                    <MenuItem onAction="#openHome" text="Home"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Logs">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openNewLog" text="New Log" />
+                        <MenuItem mnemonicParsing="false" onAction="#openViewLog" text="View / Edit Log" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Timer">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openTimer" text="Create New Timer" />
+<!--                        <MenuItem mnemonicParsing="false" onAction="#openTimerHistory" text="Saved Timers / Recents" />-->
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#openSettings" text="Settings" />
+            </menus>
+        </MenuBar>
+
+        <!-- MAIN CONTENT AREA (SWAPS OUT WHEN MENU ITEMS ARE CLICKED) -->
+        <AnchorPane fx:id="contentArea" VBox.vgrow="ALWAYS">
+            <children>
+                <Text layoutX="197.0" layoutY="101.0" text="Welcome!" strokeWidth="0.0">
+                    <font><Font size="48.0" /></font>
+                </Text>
+                <Button layoutX="241.0" layoutY="171.0" text="Start Session"
+                        onAction="#openQuestionaire"
+                        prefWidth="138.0" prefHeight="40.0"/>
+            </children>
+        </AnchorPane>
+
+    </children>
+</VBox>
