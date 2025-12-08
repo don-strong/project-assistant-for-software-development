@@ -1,5 +1,8 @@
 package com.project.app.model;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
 /**
  * A simple one-shot countdown timer that runs in the background.
  * Usage:
@@ -122,11 +125,29 @@ public class Timer {
         return running;
     }
 
-
+    /**
+     * Converts an input of hours, minutes, seconds into total Milliseconds
+     * @param hours
+     * @param minutes
+     * @param seconds
+     */
+    public long convertInput(long hours, long minutes, long seconds) {
+        long output = 0;
+        if (hours > 0) {
+            output += ((hours*60^2)*1000);
+        }
+        if (minutes > 0) {
+            output += ((minutes*60)*1000);
+        }
+        if (seconds > 0) {
+            output += seconds*1000;
+        }
+        return output;
+    }
     public String getFormattedTime(long millis) {
-        long seconds = millis / 1000;
-        long minutes = seconds / 60;
-        long hours = minutes / 60;
+        long hours = millis / 1000 / 60 / 60;
+        long minutes = millis / 1000 / 60 - (hours * 60);
+        long seconds = millis / 1000 - (hours * 60 * 60) - (minutes * 60);
         return String.format("%02d:%02d:%02d", hours, minutes, seconds);
 
     }
