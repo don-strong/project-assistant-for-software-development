@@ -1,15 +1,16 @@
 package com.project.app.controller;
 
+import java.io.IOException;
+
+import com.project.app.model.KnowBaseMain;
+import com.project.app.model.KnowDB;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 import javafx.scene.control.MenuItem;
-import java.io.IOException;
+import javafx.scene.layout.AnchorPane;
 
 
 public class HomeController {
@@ -34,7 +35,16 @@ public class HomeController {
     }
     @FXML
     protected void openNewLog() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        KnowBaseMain knowBaseMain = new KnowBaseMain();
+        KnowDB knowDBEntry = new KnowDB(
+                "1",
+                "Java, Luci",
+                "Java",
+                "Database Integration",
+                "Connection issues",
+                "Check connection string and network settings"
+        );
+        knowBaseMain.insertKnowDB(knowDBEntry);
     }
     @FXML
     protected void openViewLog(){
