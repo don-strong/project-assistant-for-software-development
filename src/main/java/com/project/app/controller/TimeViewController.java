@@ -1,7 +1,6 @@
 package com.project.app.controller;
 
 import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -20,7 +19,7 @@ public class TimeViewController {
     private TextField minutes;
     @FXML
     private TextField seconds;
-
+    private long text;
     private Timeline timeline;
     private Timer timer;
 
@@ -35,13 +34,19 @@ public class TimeViewController {
 
     @FXML
     protected void handleStart(){
-        long hoursIn = Long.parseLong(hours.getText());
-        long minutesIn = Long.parseLong(minutes.getText());
-        long secondsIn = Long.parseLong(seconds.getText());
+        long hoursIn = 0;
+        long minutesIn = 0;
+        long secondsIn = 0;
+        if (hours.getLength() > 0)
+            hoursIn = Long.parseLong(hours.getText());
+        if (minutes.getLength() > 0)
+            minutesIn = Long.parseLong(minutes.getText());
+        if (seconds.getLength() > 0)
+            secondsIn = Long.parseLong(seconds.getText());
         long inputMillis = convertInput(hoursIn, minutesIn, secondsIn);
         timer = new Timer(inputMillis, () -> {
-//            KeyFrame keyFrame2 = new KeyFrame(Duration.seconds(30),e -> timerLabel.setText("Timer Done!"));
-//            timeline.getKeyFrames().add(keyFrame2);
+            //KeyFrame keyFrame2 = new KeyFrame(Duration.seconds(30),e -> timerLabel.setText("Timer Done!"));
+            //timeline.getKeyFrames().add(keyFrame2);
         });
 
         timer.start();
@@ -50,33 +55,29 @@ public class TimeViewController {
 
     }
     @FXML
-    protected void handleStop(){
-        //throw new UnsupportedOperationException("Not supported yet.");
+    protected void handlePause(){
+        text = timer.getRemainingMillis();
         timer.cancel();
+        timeline.pause();
     }
     @FXML
     protected void handleReset(){
-        throw new UnsupportedOperationException("Not supported yet.");
+        timer.cancel();
+        timeline.pause();
+        text = 1;
+        timerLabel.setText("00:00:00");
     }
     @FXML
-    protected void handleSave(){
-        throw new UnsupportedOperationException("Not supported yet.");
+    protected void handleResume(){
+        timer = new Timer(text);
+        timer.start();
+        timerLabel.setText(timer.getFormattedTime(timer.getRemainingMillis()));
+        timeline.play();
     }
-
-    protected long gatherInput(){
-
-        return 1;
-    }
-    /**
-     * Converts an input of hours, minutes, seconds into total Milliseconds
-     * @param hours
-     * @param minutes
-     * @param seconds
-     */
     private long convertInput(long hours, long minutes, long seconds) {
         long output = 0;
         if (hours > 0) {
-            output += ((hours*60^2)*1000);
+            output += ((hours*60*60)*1000);
         }
         if (minutes > 0) {
             output += ((minutes*60)*1000);
