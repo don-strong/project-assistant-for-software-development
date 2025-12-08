@@ -19,15 +19,15 @@
     <children>
 
         <!-- MAIN TIMER DISPLAY -->
-        <Label fx:id="timerLabel" layoutX="190.0" layoutY="60.0" style="-fx-font-size: 60px; -fx-font-weight: bold;" text="00:00:00" />
+        <Label fx:id="timerLabel" layoutX="182.0" layoutY="60.0" style="-fx-font-size: 60px; -fx-font-weight: bold;" text="00:00:00" />
 
-        <HBox layoutX="190" layoutY="200" spacing="10" >
+        <HBox layoutX="175" layoutY="200" spacing="16" >
             <children>
-                <TextField fx:id="hours" prefWidth="60" style="-fx-font-size:15px;" promptText="hr" />
+                <TextField fx:id="hours" prefWidth="60" style="-fx-font-size:15px;" text=""/>
                 <Label text=":" style="-fx-font-size:15px;"/>
-                <TextField fx:id="minutes" prefWidth="60" style="-fx-font-size:15px;" promptText="min" />
+                <TextField fx:id="minutes" prefWidth="60" style="-fx-font-size:15px;" text=""/>
                 <Label text=":" style="-fx-font-size:15px;"/>
-                <TextField fx:id="seconds" prefWidth="60" style="-fx-font-size:15px;" promptText="sec"  />
+                <TextField fx:id="seconds" prefWidth="60" style="-fx-font-size:15px;" text="" />
             </children>
         </HBox>
 
@@ -35,16 +35,16 @@
         <HBox layoutX="136.0" layoutY="156.0" spacing="15">
             <children>
                 <Button onAction="#handleStart" prefWidth="100" text="Start" />
-                <Button onAction="#handleStop" prefWidth="100" text="Stop" />
+                <Button onAction="#handlePause" prefWidth="100" text="Pause" />
                 <Button onAction="#handleReset" prefWidth="100" text="Reset" />
             </children>
         </HBox>
 
-        <!-- OPTIONAL NOTES/SESSION TITLE -->
-        <TextField fx:id="sessionNameField" layoutX="181.0" layoutY="247.0" prefWidth="240" promptText="Session Name (optional)" />
+<!--        &lt;!&ndash; OPTIONAL NOTES/SESSION TITLE &ndash;&gt;-->
+<!--        <TextField fx:id="sessionNameField" layoutX="181.0" layoutY="247.0" prefWidth="240" promptText="Session Name (optional)" />-->
 
         <!-- SAVE BUTTON -->
-        <Button layoutX="226.0" layoutY="290.0" onAction="#handleSave" prefWidth="150" text="Save Session" />
+        <Button layoutX="252.0" layoutY="250.0" onAction="#handleResume" prefWidth="100" text="Resume" />
 
     </children>
 
