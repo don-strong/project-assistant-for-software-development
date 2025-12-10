@@ -23,7 +23,15 @@ A desktop productivity assistant designed to help programmers manage stress and 
 
 ## ⚙️ Current Features
 **Your Entry:**  
-- README.md
+- Display Form, show an initial JavaFX form with questions about work habits and problem-solving syle.
+- Collect answers enterd by user into Text Fields or raio buttons.
+- Store user responses in local CSV or SQLite file.(Online database now)
+- Allow users to pause and resume timer temporarily.
+- Provide form for users to input porblem and solution text.
+- Store problem and solution in local database or CSV.
+- All users to view all past entries in a table.
+- App Creates CSV/SQLite database on first launch.
+- Add text input for keyword search.(Search still non-functional but box exists.
 
 ---
 
@@ -65,17 +73,30 @@ A desktop productivity assistant designed to help programmers manage stress and 
 
 ## 💻 How to Run
 
-**Your Entry:** > Assistant for Developers ### 1. Clone Repository
-git clone https://github.com/example-url/flowspace.git
-cd flowspace
+**Your Entry:** > Assistant for Developers 
+### 1. Clone Repository
+git clone https://github.com/don-strong/project-assistant-for-software-development.git
 
-### 2. Backend Setup (Java)
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-flask run
 
-### 3. Frontend Setup (React)
-cd client
-npm install
-npm start
+### 2. Code Setup
+
+Install vscode
+
+Download the following extensions:
+extension pack for java
+maven for java
+debugger for java
+
+run these commands in powershell:
+
+winget install EclipseAdoptium.Temurin.17.JDK
+
+winget install Apache.Maven
+
+run this in the terminal for vscode using powershell while
+in the main folder of the program the top most folder
+
+utilize cd and ls to find directory and correct folder and move to it
+mvn clean install
+
+mvn javafx:run
