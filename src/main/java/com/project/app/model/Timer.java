@@ -1,8 +1,5 @@
 package com.project.app.model;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-
 /**
  * A simple one-shot countdown timer that runs in the background.
  * Usage:
