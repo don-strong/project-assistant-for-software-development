@@ -5,7 +5,8 @@ import com.mongodb.client.MongoDatabase;
 
 public class DBConnection {
     // MongoDB connection URI and database name
-    private static final String URI = "mongodb://localhost:27017";
+    private static final String URI = 
+    "mongodb+srv://user123:EZpXVkdlFTrhUDZ1@projectdbcluster.8yki7dt.mongodb.net/?retryWrites=true&w=majority";
     private static final String DB_NAME = "ProjectDB";
     
     private static MongoClient client = null;
