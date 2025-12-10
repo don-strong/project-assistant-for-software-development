@@ -1,11 +1,12 @@
 package com.project.app.controller;
 
+import com.project.app.model.Timer;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import com.project.app.model.Timer;
 import javafx.util.Duration;
 
 public class TimeViewController {
