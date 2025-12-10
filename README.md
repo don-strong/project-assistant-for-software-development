@@ -66,8 +66,8 @@ A desktop productivity assistant designed to help programmers manage stress and 
 ## 💻 How to Run
 
 **Your Entry:** > Assistant for Developers ### 1. Clone Repository
-git clone https://github.com/example-url/flowspace.git
-cd flowspace
+git clone https://github.com/don-strong/project-assistant-for-software-development.git
+
 
 ### 2. Backend Setup (Java)
 python -m venv venv
