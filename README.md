@@ -23,19 +23,19 @@ A desktop productivity assistant designed to help programmers manage stress and 
 
 ## ⚙️ Current Features
 **Your Entry:**  
-- README.md
+- Display Form, show an initial JavaFX form with questions about work habits and problem-solving syle.
+- Collect answers enterd by user into Text Fields or raio buttons.
+- Store user responses in local CSV or SQLite file.(Online database now)
+- Allow users to pause and resume timer temporarily.
+- Provide form for users to input porblem and solution text.
+- Store problem and solution in local database or CSV.
+- All users to view all past entries in a table.
+- App Creates CSV/SQLite database on first launch.
+- Add text input for keyword search.(Search still non-functional but box exists.
 
 ---
 
 ## 🧩 Planned Features / Future Work    
--Fully functional pop-up reminder system (JavaFX + SceneBuilder) | In Progress |
--Enhanced data storage system (user responses and preferences) | In Progress |
-- Questions for pop-up | In Progress |
--Smart timer system that adjusts to user input | In Progress |
--Option to ignore or pause reminders / self-shutdown timer | In Progress |
--Expanded question pool for different work types
--Search for results
--UX testing and refinement
 
 ---
 
@@ -44,14 +44,14 @@ A desktop productivity assistant designed to help programmers manage stress and 
 
 | **Week** | **Milestone / Deliverables** | **Owners** | **Evidence (PRs/Links/Demos)** |
 |-----------|------------------------------|-------------|--------------------------------|
-| 1 | Proposal completion, assign roles, and plan structure | Avery & Luci | Initial commits, requirements doc, meeting notes |
-| 2 | Define main controllers, implement storage layer, UI prototype classes (pop up and reminders) | Avery, Luci, Chris | working structure branch, README, WIKI|
-| 3 | Functioning prototype starts and stores user input | Luci, Chris, Avery | WIKI: Design elements- Json, java, and fxml files|
-| 4 | UI screens in SceneBuilder core framework are finished. | Avery & Bryan | In Progress... |
-| 5 | Integrate pop ups with timer logic, implement independent popups in JavaFX.  | Team | Demo with popups, demo video |
-| 6 | Refine UI and test, begin documentation for final submission (Thanksgiving). | Avery & Bryan | User testing feedback, UI refinement commits |
-| 7 | Integrate any other modules, Fix bugs and polish, prepare .exe, finish documentation and presentation practice | Team | Final tagged v1.0, .exe upload to git, screenshots and demo |
-| 8 | All files uploaded and pushed to main. Deliver application with presentation | Team | Project submission | 
+| 1 | Proposal completion, assign roles, and plan structure | Team | Initial commits, requirements doc, meeting notes |
+| 2 | Initial UI prototype created; FIRST popup + reminder mockups only. Database and class structure agreed upon and drawn up | Avery, Luci, Chris | working structure branch, README, WIKI|
+| 3 | Java classes created and structure setup for database/ database agreed upon for future usage | Luci, Chris, Avery | WIKI: Design elements- Json, java, and fxml files|
+| 4 | UI screens mostly created in SceneBuilder. Framework established but not fully functional. | Avery | fxml files |
+| 5 |  Timer worked on and tester methods implemented to make sure it works. Database logic for MongoDB Compass finished and tested in main class | Luci & Chris | java files |
+| 6 | Time off (Thanksgiving) | N/A | N/A |
+| 7 | Controllers created and implemented to work with timer, database logic. Classes packaged in maven. Changed structure of folders in github to reflect our own. | Luci, Chris, Bryan | java files |
+| 8 | pom finalized for app packaging and runtime. .exe packaged using Jar file. Final files pushed to main. Delivered application and presentation with the product in its current working state. | Team | Project submission, pom, Final tagged v1.0, .exe upload to git, demo |
 
 ---
 
@@ -64,18 +64,29 @@ A desktop productivity assistant designed to help programmers manage stress and 
 - Documentation (README / inline comments) is up to date
 
 ## 💻 How to Run
+**Your Entry:** > Assistant for Developers 
+### 1. Clone Repository
+git clone https://github.com/don-strong/project-assistant-for-software-development.git
 
-**Your Entry:** > Assistant for Developers ### 1. Clone Repository
-git clone https://github.com/example-url/flowspace.git
-cd flowspace
+### 2. Code Setup
 
-### 2. Backend Setup (Java)
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-flask run
+Install vscode
 
-### 3. Frontend Setup (React)
-cd client
-npm install
-npm start
+Download the following extensions:
+extension pack for java
+maven for java
+debugger for java
+
+run these commands in powershell:
+
+winget install EclipseAdoptium.Temurin.17.JDK
+
+winget install Apache.Maven
+
+run this in the terminal for vscode using powershell while
+in the main folder of the program the top most folder
+
+utilize cd and ls to find directory and correct folder and move to it
+mvn clean install
+
+mvn javafx:run
