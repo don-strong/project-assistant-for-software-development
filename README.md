@@ -24,14 +24,14 @@ A desktop productivity assistant designed to help programmers manage stress and 
 ## ⚙️ Current Features
 **Your Entry:**  
 - Display Form, show an initial JavaFX form with questions about work habits and problem-solving syle.
-- Collect answers enterd by user into Text Fields or raio buttons.
-- Store user responses in local CSV or SQLite file.(Online database now)
+- Collect answers entered by user into Text Fields or radio buttons.
+- Store user responses in local CSV or JSON file.(Online database now)
 - Allow users to pause and resume timer temporarily.
-- Provide form for users to input porblem and solution text.
+- Provide form for users to input problem and solution text.
 - Store problem and solution in local database or CSV.
 - All users to view all past entries in a table.
-- App Creates CSV/SQLite database on first launch.
-- Add text input for keyword search.(Search still non-functional but box exists.
+- App Creates CSV/noSQL database on first launch.
+- Add text input for keyword search.(Search still non-functional but box exists).
 
 ---
 
@@ -83,8 +83,11 @@ winget install EclipseAdoptium.Temurin.17.JDK
 
 winget install Apache.Maven
 
+open folder in vscode using the open folder tab using maven
+create a new project utilizing the database folders utilizing maven
+
 run this in the terminal for vscode using powershell while
-in the main folder of the program the top most folder
+in the main folder of the program the (top most folder)
 
 utilize cd and ls to find directory and correct folder and move to it
 mvn clean install
